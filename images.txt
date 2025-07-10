@@ -1,1 +1,1 @@
-redis
+elasticsearch:7.17.20
