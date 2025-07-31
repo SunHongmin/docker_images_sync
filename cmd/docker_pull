@@ -118,8 +118,16 @@ git commit -m "refactor: add docker tags: $*"
 git push
 popd > /dev/null
 
-echo "[pull images] wait ${FIRST_DELAY}s for docker pull in github"
-sleep "$FIRST_DELAY"
+#echo "[pull images] wait ${FIRST_DELAY}s for docker pull in github"
+#sleep "$FIRST_DELAY"
+
+# 修改后的用户确认提示
+read -p "[pull images] 是否开始进行镜像拉取（输入 Y 继续，其他键退出）? " -n 1 -r
+echo
+if [[ ! $REPLY =~ ^[Yy]$ ]]; then
+    echo "操作已取消"
+    exit 1
+fi
 
 # Execute docker pull with retry functionality
 FAILED_TAGS=()
