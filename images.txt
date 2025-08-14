@@ -1,8 +1,1 @@
-mysql:8.4.5 --platform=linux/arm64 
-bitnami/redis:8.0 --platform=linux/arm64 
-bitnami/elasticsearch:8.18.0 --platform=linux/arm64 
-minio/minio:RELEASE.2025-06-13T11-33-47Z-cpuv1 --platform=linux/arm64 
-bitnami/etcd:3.5 --platform=linux/arm64 
-milvusdb/milvus:v2.5.10 --platform=linux/arm64 
-nsqio/nsq:v1.2.1 --platform=linux/arm64 
-opencoze/opencoze:latest --platform=linux/arm64 
+openresty/openresty:1.27.1.2-3-alpine-fat --platform=linux/arm64 
