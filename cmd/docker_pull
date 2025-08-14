@@ -122,6 +122,7 @@ popd > /dev/null
 #sleep "$FIRST_DELAY"
 
 # 修改后的用户确认提示
+echo "任务已提交，访问https://github.com/SunHongmin/docker_images_sync/actions 查看进度，确认拉取推送成功后，输入Y继续。"
 read -p "[pull images] 是否开始进行镜像拉取（输入 Y 继续，其他键退出）? " -n 1 -r
 echo
 if [[ ! $REPLY =~ ^[Yy]$ ]]; then
@@ -167,7 +168,7 @@ if [ ${#FAILED_TAGS[@]} -gt 0 ]; then
     echo
     echo "====== Summary of failed pulls ======"
     for tag in "${FAILED_TAGS[@]}"; do
-        echo " - $REGISTRY_URL/$tag"
+        echo " - $REGISTRY_URL/$REGISTRY_NS/$tag"
     done
     exit 1
 fi
