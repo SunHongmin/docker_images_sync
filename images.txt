@@ -1,1 +1,4 @@
-openresty/openresty:1.27.1.2-3-alpine-fat --platform=linux/arm64 
+node:18-alpine --platform=linux/arm64 
+nginx:alpine --platform=linux/arm64 
+maven:3.8.6-openjdk-8-slim --platform=linux/arm64 
+openjdk:8-jre-alpine --platform=linux/arm64 
