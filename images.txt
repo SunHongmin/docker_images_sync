@@ -1,5 +1,5 @@
 node:18-alpine --platform=linux/arm64 
 nginx:alpine --platform=linux/arm64 
 openjdk:8-jre-alpine --platform=linux/arm64 
-mysql:5.7 --platform=linux/arm64 
-mysql:8.0.18 --platform=linux/arm64 
+arm64v8/mysql:8 --platform=linux/arm64 
+eclipse/mysql:latest --platform=linux/arm64 
