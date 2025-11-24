@@ -1,3 +1,2 @@
-mysql:5.7.44 --platform=linux/arm64 
 redis:5.0.4 --platform=linux/arm64 
 openjdk:17.0.2 --platform=linux/arm64 
