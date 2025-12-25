@@ -1,1 +1,1 @@
-lgdd/tess4j-rest --platform=linux/arm64 
+azul/zulu-openjdk-debian:11-latest --platform=linux/arm64 
