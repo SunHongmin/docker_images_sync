@@ -1,1 +1,1 @@
-openjdk:8-jdk-bullseye --platform=linux/arm64 
+lgdd/tess4j-rest --platform=linux/arm64 
