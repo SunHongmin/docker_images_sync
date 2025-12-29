@@ -1,1 +1,1 @@
-azul/zulu-openjdk-debian:11-latest --platform=linux/arm64 
+nginx:alpine --platform=linux/arm64 
