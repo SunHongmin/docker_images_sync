@@ -1,1 +1,1 @@
-redis:7-alpine --platform=linux/arm64 
+xpzouying/xiaohongshu-mcp --platform=linux/arm64 
